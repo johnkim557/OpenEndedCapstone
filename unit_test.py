@@ -18,9 +18,11 @@ def capitalizename(df):
 def insertintostate(df):
     df['STATE'].fillna('N/A', inplace = True)
     return df[['STATE']]
+
 def insertintophone(df):
     df['PHONE'].fillna('N/A',inplace= True)
     return df[['PHONE']]
+    
 import unittest
 from pandas.testing import assert_frame_equal
 class TestColumnMunging(unittest.TestCase):
