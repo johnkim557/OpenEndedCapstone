@@ -1,0 +1,13 @@
+The Open Ended Capstone originally utilized Google Places API to gather restaurant data but do to the expensive pricing model to 
+accurately obtain all establishments within the United States, the method was scrapped. During the year of 2014, Google Places API's tier pricing
+was much more affordable so the source data within this product was purchased by a private data scraping website. The purchased dataset did not provide full
+business details such as reviews, ratings, and business status. To combat this issue, the open ended capstone utilized Google Cloud Compute Engine to take
+advantage of running algorithms through multiple nodes to avoid IP address blocks and to maintain a competitive data mining timeframe. Unfortunately,
+due to Google Cloud's operating terms the virtual machines were terminated after a random amount of running hours. The workload may have to be migrated
+to an AWS environment to run reserved instances. Due to a lack of financial resources the latter option was unable to be run. 
+
+While more source data may provide supplemental information to the current purchased restaurants dataset, the current csv file inputted as the 
+source dataset within Azure Data Factory. Azure SQL Database along with a direct connection to Microsoft SQL SERVER Management Studio was set as the
+sink or destination data storage solution. The data has been successfully trasnferred into a SQL format to be stored in a secured manner within the
+Microsoft Azure environment.
+
